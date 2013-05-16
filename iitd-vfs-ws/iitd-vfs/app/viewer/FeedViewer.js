@@ -50,6 +50,8 @@ Ext.define('FeedViewer.App', {
 			});
 			return this.login;
 		},
+
+
     
     /**
      * Create the list of fields to be shown on the left

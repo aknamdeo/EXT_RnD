@@ -76,6 +76,18 @@ Ext.define('FeedViewer.LoginDlg', {
 		onLoginClick: function() {
 			 console.log(this);
 			 this.fireEvent('loadmainpage',this);
-		}
+		},
+
+                /**
+                 * Reacts to the open all being clicked
+                 * @private
+                 */
+                onRegClick: function(){
+                    console.log("MyReg");
+                    var reg_win = this.addRegisterWindow || (this.addRegisterWindow = Ext.create('widget.registerDlg', {
+                    }));
+                    reg_win.form.getForm().reset();
+                    reg_win.show();
+                }
 		
 });
